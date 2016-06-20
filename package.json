@@ -2,7 +2,7 @@
   "name": "peerio-web-styling",
   "version": "1.0.0",
   "description": "Styling for Peerio websites and web apps",
-  "main": "index.js",
+  "main": "styles.scss",
   "private": true,
   "repository": {
     "type": "git",

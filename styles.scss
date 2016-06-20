@@ -1,7 +1,5 @@
 @import 'normailize';
 
-@import 'vars/*';
-
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
@@ -27,9 +25,6 @@ body {
   overflow: hidden;
   padding: 0;
 }
-
-@import '_partials/*';
-
 
 .video-player {
   @extend .flex-justify-center;
