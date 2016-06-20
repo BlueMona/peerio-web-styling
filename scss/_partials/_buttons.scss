@@ -1,0 +1,228 @@
+.button-video {
+  background: url('img/content/home-video.png') top center no-repeat;
+  background-size: 490px 568px;
+  height: 284px;
+  margin: 0 auto;
+  width: 568px;
+
+  &:hover {
+    background-position: bottom center;
+  }
+}
+
+.button-raised {
+  display: inline-block;
+  border-radius: $border-radius-base;
+  margin: 0 $margin-base;
+  box-shadow: $shadow-level-1;
+  transition: 300ms;
+  text-decoration: none;
+  padding: 0 $padding-base;
+  text-align: center;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    box-shadow: $shadow-level-3;
+  }
+
+  &.android,
+  &.ios {
+    height: 40px;
+    padding: 0;
+    border-radius: 8px;
+
+    @media screen and (max-width: $mobile-large) {
+      margin: 0;
+      height: auto;
+      width: 70vw;
+
+      img {
+        width: 70vw;
+        vertical-align: middle;
+      }
+
+    }
+  }
+
+  &.android {
+    background: $black;
+  }
+}
+
+.button-down {
+  bottom: 0;
+  cursor: pointer;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 50%);
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  font-size: 24px;
+  background: #ccc;
+  z-index: 3;
+  text-align: center;
+  border-radius: $border-radius-circle;
+
+  @media screen and (max-width: $mobile-large) {
+    display: none;
+  }
+}
+
+.button-desktop-download {
+  background-color: $white-100;
+  margin: 0 0 $margin-default;
+  padding: $padding-base;
+  width: 286px;
+
+  .md-headline {
+    color: $color-base-blue;
+    display: block;
+    font-weight: 600;
+  }
+
+  .platform {
+    color: $black-87;
+}
+
+}
+
+// FontAwesome Icon buttons
+.buttons-desktop {
+  .fa {
+    color: $color-base-blue;
+    background: $white-100;
+    font-size: 32px;
+    line-height: 48px;
+    height: 48px;
+    width: 48px;
+    text-decoration: none;
+  }
+
+  @media screen and (max-width: 1000px) {
+    align-self: center;
+    margin: $margin-default auto;
+  }
+}
+
+.buttons-mobile {
+  display: inline-block;
+  margin-bottom: $margin-default;
+  height: 40px;
+
+  @media screen and (max-width: 1000px) {
+    align-self: center;
+    margin: $margin-default auto;
+  }
+
+  @media screen and (max-width: $mobile-large) {
+    height: auto;
+    margin: $margin-default 0;
+  }
+
+  a {
+    height: auto;
+    width: 135px;
+
+    &:not(:last-of-type) {
+      margin-right: $margin-base;
+    }
+
+    img {
+      width: inherit;
+    }
+  }
+}
+
+.button,
+[type="submit"] {
+  background: rgba($color-base-green, .7);
+  background-image: none;
+  border: 0;
+  border-radius: $border-radius-base;
+  box-shadow: none;
+  color: $white-100;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  height: 36px;
+  line-height: 36px;
+  margin-left: $margin-base;
+  outline: 0;
+  padding: 0 $padding-default;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: uppercase;
+  transition: $transition-normal;
+
+  &[disabled] {
+    cursor: not-allowed;
+    color: $black-12;
+  }
+
+  &:first-of-type {
+    margin-left: 0;
+  }
+
+  &:hover,
+  &:active {
+    background: $color-base-green;
+  }
+  &:not(:disabled):active,
+  &:not(:disabled):active span {
+    background: $color-base-green;
+    background-image: none;
+    box-shadow: none;
+    color: $white-100;
+
+  }
+
+
+  // removes stripe button styling
+  & span {
+    background: none;
+    background-image: none;
+    border-radius: 0;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    font-family: inherit;
+    font-weight: inherit;
+    height: inherit;
+    line-height: inherit;
+    outline: 0;
+    padding: 0;
+    text-shadow: none;
+    width: inherit;
+  }
+
+  &.cancel {
+    background: rgba($color-base-red, .7);
+
+    &:hover {
+      background: $color-base-red;
+    }
+  }
+
+  &.accent {
+    background: rgba($bg-button-accent, .54);
+
+    &:hover {
+      background: $bg-button-accent
+    }
+  }
+
+  &.primary {
+    background: rgba($bg-button-primary, .54);
+
+    &:hover {
+      background: $bg-button-primary
+    }
+  }
+}

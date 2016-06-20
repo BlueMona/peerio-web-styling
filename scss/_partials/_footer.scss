@@ -1,0 +1,27 @@
+footer {
+  background: $color-footer;
+  padding: $padding-default 0;
+
+  @media screen and (max-width: $mobile-large) {
+    padding: 0;
+  }
+
+  .logo {
+    height: 48px;
+    width: 121px;
+
+    @media screen and (max-width: $mobile-large) {
+      margin: $margin-base 0;
+    }
+  }
+}
+
+.footer-info {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: $mobile-large) {
+    flex-direction: column-reverse;
+  }
+}

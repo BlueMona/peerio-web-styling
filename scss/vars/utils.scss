@@ -1,0 +1,11 @@
+$shadow-level-1: 0 1px 8px 0 rgba(0, 0, 0, .2), 0 3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .12);
+$shadow-level-2: 0 4px 5px -2px rgba(0, 0, 0, .2), 0 7px 10px 1px rgba(0, 0, 0, .14), 0 2px 16px 1px rgba(0, 0, 0, .12);
+$shadow-level-3: 0 6px 6px -3px rgba(0, 0, 0, .2), 0 10px 14px 1px rgba(0, 0, 0, .14), 0 4px 18px 3px rgba(0, 0, 0, .12);
+
+$border-radius-base: 2px;
+$border-radius-circle: 50%;
+
+// Transition speeds
+$transition-fast: 100ms;
+$transition-normal: 200ms;
+$transition-slow: 300ms;

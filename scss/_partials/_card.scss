@@ -1,0 +1,46 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background: rgba($black, .06);
+  border: 1px solid $white-100;
+  border-radius: $border-radius-base;
+  flex-grow: 1;
+  margin-bottom: 64px;
+  overflow: hidden;
+  width: 100%;
+
+  &.primary {
+    background: $black-12;
+  }
+
+  input:not(.button),
+  select {
+    background: $white-70;
+  }
+
+  .card-title {
+    @extend .md-title;
+
+    background: rgba($black, .06);
+    color: $black-54;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .card-content {
+    margin-bottom: auto;
+  }
+
+  .card-content,
+  .card-footer {
+    padding: $padding-default $padding-default #{$padding-base*2.5};
+    text-align: center;
+
+    .md-display-3 {
+      font-weight: 600;
+      margin: 32px auto;
+    }
+  }
+}

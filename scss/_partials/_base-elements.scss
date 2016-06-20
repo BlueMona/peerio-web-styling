@@ -1,0 +1,45 @@
+a {
+  color: currentColor; // not sure how I feel about this. revisit later. - Paul
+  // bad for accessability, but fixes dots on firefox - Paul
+  &:active,
+  &:focus,
+  &:visited {
+    outline: none;
+  }
+
+  i {
+    color: $black-38;
+    transition: $transition-normal;
+  }
+
+  &:hover {
+    i {
+      color: $black-54;
+    }
+  }
+}
+
+p {
+  margin: $margin-default 0 #{$margin-base*2.5};
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+
+input:not(.button),
+select {
+  background: rgba(0, 0, 0, .06);
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: $border-radius-base;
+  font-size: 16px;
+  height: 36px;
+  line-height: 32px;
+  padding: 0 4px;
+  transition: $transition-normal;
+
+  &:focus {
+    border: 2px solid rgba(0, 0, 0, .08);
+  }
+}

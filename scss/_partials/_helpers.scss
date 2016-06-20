@@ -1,0 +1,27 @@
+.margin-base {
+  margin: $margin-base;
+
+  &.tb {
+    margin: $margin-base 0;
+  }
+
+  &.lr {
+    margin: 0 $margin-base;
+  }
+}
+
+.padding-base {
+  margin: $padding-base;
+
+  &.tb {
+    margin: $padding-base 0;
+  }
+
+  &.lr {
+    margin: 0 $padding-base;
+  }
+}
+
+.text-error {
+  color: $color-error;
+}

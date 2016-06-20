@@ -1,0 +1,56 @@
+.social,
+.mail {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: $black-54;
+  display: flex;
+  justify-content: flex-end;
+
+  a {
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    font-size: 24px;
+    line-height: 24px;
+    padding: $padding-small 0;
+    color: $black-54;
+    transition: color 300ms;
+    margin: $margin-base 0 $margin-base $margin-base;
+
+    &:before {
+        width: 32px;
+        display: inline-block;
+    }
+
+    &:hover {
+      color: $black-54;
+    }
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.mail a {
+  height: auto;
+  width: auto;
+
+  span {
+    color: $black-87;
+    font-size: 14px;
+    margin-left: $margin-base;
+  }
+}
+
+.press-contact-logo {
+  line-height: 48px;
+
+  img {
+    max-width: 32px;
+    max-height: 32px;
+    margin: $margin-base $margin-base 0 0;
+  }
+}

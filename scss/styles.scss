@@ -1,0 +1,51 @@
+@import 'normailize';
+
+@import 'vars/*';
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: $black-87;
+  display: flex;
+  flex-direction: column;
+  font-family:$font-stack-default;
+  font-size: $body-font-size-base;
+  font-weight: 300;
+  height: 100vh;
+  line-height: 1.5;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+@import '_partials/*';
+
+
+.video-player {
+  @extend .flex-justify-center;
+  @extend %flex-align-center;
+
+  background: $black-38;
+  bottom: 0;
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 0;
+
+  iframe {
+    box-shadow: $shadow-level-3;
+  }
+
+}

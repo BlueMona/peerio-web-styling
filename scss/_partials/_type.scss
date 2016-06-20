@@ -1,0 +1,110 @@
+.caption {
+  color: $black-38;
+  font-size: $caption-font-size-base;
+
+  &.light {
+    color: $white-30;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $black-54;
+
+  &.light {
+    color: $white-70;
+  }
+}
+
+.md-display-4 {
+  font-size: $display-4-font-size-base;
+  font-weight: 300;
+  letter-spacing: -.010em;
+  line-height: $display-4-font-size-base;
+}
+
+.md-display-3 {
+  font-size: $display-3-font-size-base;
+  font-weight: 400;
+  letter-spacing: -.005em;
+  line-height: $display-3-font-size-base;
+}
+
+.md-display-2 {
+  font-size: $display-2-font-size-base;
+  font-weight: 400;
+  line-height: rem(6.4);
+}
+
+.md-display-1 {
+  font-size: $display-1-font-size-base;
+  font-weight: 400;
+  line-height: rem(4);
+}
+
+.md-headline {
+  font-size: $headline-font-size-base;
+  font-weight: 400;
+  line-height: rem(3.2);
+}
+
+.md-title{
+  font-size: $title-font-size-base;
+  font-weight: 500;
+  letter-spacing: .005em;
+}
+
+.md-body-1{
+  font-size: $body-font-size-base;
+  font-weight: 400;
+  letter-spacing: .010em;
+  line-height: rem(2);
+}
+
+.md-body-2{
+  font-size: $body-font-size-base;
+  font-weight: 500;
+  letter-spacing: .010em;
+  line-height: rem(2.4);
+}
+
+.md-subhead{
+  font-size: $subhead-font-size-base;
+  font-weight: 400;
+  letter-spacing: .010em;
+  line-height: rem(2.4);
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+strong {
+  color: $black-54;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-white {
+  color: $white-100;
+}
+
+.text-overflow-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

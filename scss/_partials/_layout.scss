@@ -1,0 +1,243 @@
+.main {
+  @extend %flex-col;
+
+  flex-grow: 1;
+  overflow: hidden;
+  overflow-y: auto;
+  margin-top: #{$margin-base*8};
+}
+
+.content-wrapper {
+  margin: 0 auto;
+  width: 960px;
+
+  @media screen and (max-width: 1000px) {
+    width: 80vw;
+  }
+
+  @media screen and (max-width: $mobile-large) {
+    margin: 0;
+    padding: $padding-default;
+    width: 100%;
+  }
+}
+
+.section-icon {
+  align-items: center;
+  display: flex;
+  flex: 1 0 33vw;
+  flex-direction: row;
+  justify-content: center;
+  margin: #{$margin-base*4} 0;
+
+  @media screen and (max-width: $mobile-large) {
+    margin: 0;
+    width: 80vw;
+    display: block;
+  }
+
+  img {
+    width: 100%;
+
+    &.referrals,
+    &.security {
+      max-width: 288px;
+    }
+  }
+}
+
+[data-page="registration"] .main {
+  @extend .flex-col;
+}
+
+
+.content-section {
+  padding: #{$padding-base*10} 0 #{$padding-base*4};
+
+
+  [data-page='home'] & .content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media screen and (max-width:  $mobile-large) {
+      display: inherit;
+      flex-wrap: nowrap;
+    }
+  }
+
+  [data-page='pricing'] & .content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    @media screen and (max-width:  $mobile-large) {
+      display: inherit;
+      flex-direction: column;
+    }
+  }
+
+  // TODO fix this.
+  // the rule compiles but doesn't appear to be working.
+  @media screen and (min-width: #{$mobile-large+1}) {
+    [data-page='press'] & {
+      .content-wrapper {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .content-news {
+        flex: 0 1 auto;
+      }
+    }
+  }
+
+}
+
+// TODO more generic class names - paul
+.content-news {
+  flex: 3 0 auto;
+  margin-right: #{$margin-base*8};
+
+  @media screen and (max-width: $mobile-large) {
+    flex: 1 0 80vw;
+    margin-right: #{$margin-base*4};
+  }
+
+  .content-item {
+    display: block;
+
+    @media screen and (max-width: $mobile-large) {
+      flex-direction: column;
+
+      &:nth-of-type(2n) {
+        flex-direction: column;
+      }
+    }
+  }
+}
+.content-section,
+.content-secondary {
+  flex: 1 0 auto;
+}
+
+.content-item {
+  align-items: center;
+  display: flex;
+
+  img {
+    flex-shrink: 0;
+    height: 320px;
+    width: 320px;
+
+    &.press {
+      height: auto;
+      margin-bottom: $margin-default;
+
+      @media screen and (max-width: $mobile-large) {
+        width: 80vw;
+      }
+    }
+  }
+
+  @media screen and (min-width: #{$mobile-large+1}){
+    [data-page='home'] & {
+      align-items: flex-start;
+      margin: 0 $margin-default #{$margin-base*4};
+      width: 30%;
+    }
+  }
+
+  @media screen and (max-width: $mobile-large) {
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 32px;
+
+    > img {
+      height: 240px;
+      width: 240px;
+    }
+
+    &:nth-of-type(2n) {
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+.title-section {
+  background-color: rgba($color-nav, .87);
+  color: $white-100;
+  flex-shrink: 0;
+  padding: $padding-default 0 #{$padding-base*6};
+  position: relative;
+
+  .content {
+    // because you can't extend inside of a media query
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media screen and (min-width: 401px) {
+    background-image: url('img/PaperPlane.png');
+    background-position: 80% 50%;
+    background-repeat: no-repeat;
+    background-size: 60%;
+
+    h1 {
+      // .md-display-2: because you can't extend in a media query WTF?! - paul
+      font-size: 45px;
+      font-weight: 400;
+      line-height: 64px;
+    }
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 1000px) {
+    .home-page.content {
+      flex-direction: column;
+
+      .caption,
+      [data-app="versions-list"] {
+        text-align: center;
+      }
+    }
+  }
+
+  @media screen and (max-width: $mobile-large) {
+    h1 {
+      // .md-display-1: because you can't extend in a media query WTF?! - paul
+      font-size: 34px;
+      font-weight: 400;
+      line-height: 40px;
+      text-align: left;
+    }
+
+    .content {
+      // because you can't extend inside of a media query
+      flex-direction: column;
+    }
+
+    // TODO fix the the image
+    .button-video {
+      display: none;
+    }
+  }
+}
+.pricing-col {
+  @extend %flex-col;
+  width: 300px;
+
+  @media screen and (max-width: $mobile-large) {
+    width: 100%;
+
+    .md-display-3 {
+      font-size: 48px;
+    }
+
+    ul {
+      padding-left: #{$padding-base*1.5};
+      display: inline-block;
+    }
+  }
+}
+
+@import '_grid.scss';

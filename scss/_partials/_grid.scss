@@ -1,0 +1,93 @@
+
+// TODO move placeholders to _placeholders.scss
+%flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+%flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+%flex-align-center {
+  align-items: center;
+}
+
+%flex-align-start {
+  align-items: flex-start;
+}
+
+%flex-justify-start {
+  justify-content: flex-start;
+}
+
+%flex-justify-center {
+  justify-content: center;
+}
+
+%flex-justify-between {
+  justify-content: space-between;
+}
+
+%flex-justify-end {
+  justify-content: flex-end;
+}
+
+%flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-row {
+  @extend %flex-row;
+}
+
+.flex-col {
+  @extend %flex-col;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.flex-grow-0 {
+  flex-grow: 0;
+}
+
+.flex-shrink-1 {
+  flex-shrink: 1;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+
+
+.flex-align-center {
+  @extend %flex-align-center;
+}
+
+.flex-align-start {
+  @extend %flex-align-start;
+}
+
+.flex-justify-start {
+  @extend %flex-justify-start;
+}
+
+.flex-justify-center {
+  @extend %flex-justify-center;
+}
+
+.flex-justify-between {
+  @extend %flex-justify-between;
+}
+
+.flex-justify-end {
+  @extend %flex-justify-end;
+}
+
+.flex-wrap {
+  @extend %flex-wrap;
+}

@@ -1,0 +1,46 @@
+.sprite {
+  background-image: url('img/peerio-icon-sprites.png');
+  background-size: cover;
+  display: block;
+  height: 124px;
+  margin: 0 auto;
+  width: 160px;
+
+  &.professionally-audited {
+    background-position: 0 0;
+  }
+
+  &.data-synchronization {
+    background-position: 0 124px;
+  }
+
+  &.peerio-is-free {
+    background-position: 0 248px;
+  }
+
+  &.files-and-messages-stay-private {
+    background-position: 0 371px;
+  }
+
+  &.end-to-end-encryption {
+    background-position: 0 496px;
+  }
+
+  &.big-file-uploads {
+    background-position: 0 620px;
+  }
+
+  &.secure-cloud {
+    background-position: 0 744px;
+  }
+
+  &.open-source {
+    background-position: 0 868px;
+  }
+
+  &.group-chat {
+    background-position: 0 992px;
+  }
+
+
+}

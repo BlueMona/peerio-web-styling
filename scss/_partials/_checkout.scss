@@ -1,0 +1,66 @@
+.checkout {
+  .form-row {
+    @extend %flex-row;
+  }
+
+  .plan-cost {
+    margin-right: #{$margin-base*4};
+    width: 264px;
+  }
+
+  .button, .hidden-helper {
+    margin: #{$margin-base*4} $margin-base 0 0;
+  }
+
+
+
+  .submit {
+    & + .hidden-helper {
+      color: transparent;
+      overflow: hidden;
+    }
+
+
+    &:hover + .hidden-helper {
+      color: $black-38;
+    }
+  }
+
+  ul {
+    list-style: disc;
+    padding: $padding-base #{$padding-base * 2.5} 0;
+    color: $black-87;
+  }
+
+  @media screen and (max-width: $mobile-large) {
+    .form-row {
+      flex-direction: column !important;
+      width: 100%;
+    }
+
+    .plan-cost {
+      margin: #{$margin-base*4} 0 0;
+    }
+
+    .flex-col {
+      width: 100%;
+    }
+
+
+    .card-wrapper {
+      display: none;
+    }
+
+    input {
+      width: 100%;
+    }
+
+    .submit {
+      margin-right: 0;
+    }
+
+    .hidden-helper {
+      display: none !important;
+    }
+  }
+}

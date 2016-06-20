@@ -1,0 +1,9 @@
+// JP CARD STYLES
+.jp-card-container {
+  margin-bottom: 0 !important;
+}
+
+input.jp-card-invalid {
+  color: $color-error;
+  border-color: $color-error;
+}

@@ -1,0 +1,230 @@
+.mobile,
+.desktop {
+  background: $color-nav;
+  box-shadow: $shadow-level-1;
+  flex-shrink: 0;
+  height: 64px;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+}
+
+
+.mobile {
+  display: none;
+
+  @media screen and (max-width: $mobile-large) {
+    display: flex;
+  }
+}
+
+.desktop {
+  overflow: hidden;
+
+  @media screen and (max-width: $mobile-large) {
+    display: none;
+  }
+
+
+  nav {
+    width: 960px;
+    display: block;
+    height: 64px;
+    margin: 0 auto;
+    white-space: nowrap;
+    position: relative;
+
+    a {
+      display: inline-block;
+      height: 64px;
+      line-height: 64px;
+      text-decoration: none;
+    }
+
+    @media screen and (max-width: 1000px) {
+      ul {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+      }
+    }
+  }
+}
+
+[data-page="home"] li.home,
+[data-page="security"] li.security,
+[data-page="referrals"] li.referrals,
+[data-page="renvoi"] li.referrals,
+[data-page="technology"] li.technology,
+[data-page="notre technologie"] li.technology,
+.nav-desktop li:hover {
+  color: $white-100;
+  border-bottom-color: $white-70;
+
+  @media screen and (max-width: $mobile-large) {
+    background: $color-base-blue;
+  }
+}
+
+.nav-desktop {
+  display: inline-block;
+
+  @media screen and (max-width: $mobile-large){
+    display: none;
+  }
+
+  a {
+    text-decoration: none;
+    padding: 0 $padding-base;
+    color: currentColor;
+  }
+
+  li {
+    height: 64px;
+    border-bottom: 4px solid transparent;
+    padding: 0 8px;
+    display: inline-block;
+    line-height: 64px;
+    transition: .3s;
+    color: $white-70;
+
+    &.logo-home {
+      background-image: url('img/favicons/icon300.png');
+      background-size: contain;
+      border: 0;
+      padding: 0;
+      height: 64px;
+      margin-right: $margin-default;
+      float: left;  // change to flexbox and remove this - paul
+
+      a {
+        width: 64px;
+        padding: 0;
+      }
+    }
+  }
+}
+
+.mobile-header {
+  color: $white-100;
+  line-height: 64px;
+  width: 100vw;
+
+  .button-open {
+    @extend .flex-shrink-0;
+
+    width: 64px;
+    height: 64px;
+  }
+
+  .md-title {
+    @extend .text-overflow-ellipsis;
+
+    margin: 0 $margin-default;
+  }
+}
+
+.button-open,
+.button-back {
+  @extend %flex-row;
+  @extend %flex-align-center;
+  @extend .flex-justify-center;
+}
+
+.back {
+  padding: 0;
+}
+
+.button-back {
+  height: 48px;
+  width: 48px;
+}
+
+.nav-mobile {
+  background: $white-100;
+  display: none;
+  height: 100vh;
+  left: -100%;
+  max-width: (56px * 5);
+  min-width: calc(100vw - 56px);
+  position: absolute;
+  top: 0;
+  transition: 300ms;
+
+  @media screen and (max-width: $mobile-large){
+    display: flex;
+    flex-direction: column;
+  }
+
+  .back {
+    @extend %flex-row;
+    @extend %flex-align-center;
+
+    background: $black-12;
+    padding: 0;
+    height: 64px;
+    font-weight: 600;
+  }
+
+  .content-nav {
+    @extend .flex-grow-1;
+
+    overflow: hidden;
+    overflow-y: auto;
+  }
+
+  li {
+    height: 48px;
+    font-weight: 600;
+    line-height: 48px;
+  }
+
+  a {
+    display: block;
+    padding-left: #{$padding-base*6};
+    text-decoration: none;
+  }
+}
+
+.opened {
+  .nav-mobile {
+    z-index: 1;
+    left: 0;
+    box-shadow: $shadow-level-2;
+  }
+
+  .overlay-mobile {
+    left: 0;
+    opacity: 1;
+  }
+
+  + .main {
+    overflow: hidden;
+  }
+}
+
+.nav-mobile-label {
+  display: none;
+  text-transform: capitalize;
+  @media screen and (max-width: $mobile-large){
+    display: block;
+  }
+}
+
+.overlay-mobile {
+  background: $black-38;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: -100%;
+  opacity: 0;
+  transition: opacity 300ms;
+}

@@ -1,0 +1,14 @@
+$grid-base: 8px;
+
+$margin-default: #{$grid-base*2};
+$margin-base: $grid-base;
+$margin-small: #{$grid-base/2};
+
+$padding-default: #{$grid-base*2};
+$padding-base: $grid-base;
+$padding-small: #{$grid-base/2};
+
+
+// Media Queries
+$mobile-small: 420px;
+$mobile-large: 480px;

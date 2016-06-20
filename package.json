@@ -1,0 +1,16 @@
+{
+  "name": "peerio-web-styling",
+  "version": "1.0.0",
+  "description": "Styling for Peerio websites and web apps",
+  "main": "index.js",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PeerioTechnologies/peerio-web-styling.git"
+  },
+  "author": "Peerio",
+  "bugs": {
+    "url": "https://github.com/PeerioTechnologies/peerio-web-styling/issues"
+  },
+  "homepage": "https://github.com/PeerioTechnologies/peerio-web-styling#readme"
+}
