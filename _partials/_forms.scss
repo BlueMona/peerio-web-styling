@@ -1,16 +1,17 @@
 input,
 select {
+  height: 36px;
+  line-height: 36px;
   background: $black-12;
   border: 0;
   margin-right: $margin-base;
   outline: 0;
-  padding: $padding-base;
+  padding: 0 $padding-base;
 }
 
 select {
   -webkit-appearance: none;
   border-radius: 0;
-  height: 35px;
 }
 
 .checkbox-input,
