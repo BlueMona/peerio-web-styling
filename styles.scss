@@ -18,7 +18,7 @@ body {
   color: $black-87;
   display: flex;
   flex-direction: column;
-  font-family:$font-stack-default;
+  font-family: $font-stack-default;
   font-size: $body-font-size-base;
   font-weight: 300;
   height: 100vh;
@@ -27,6 +27,5 @@ body {
   overflow: hidden;
   padding: 0;
 }
-
 
 @import '_partials/*'

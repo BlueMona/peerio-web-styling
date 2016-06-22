@@ -90,10 +90,9 @@
     color: $white-70;
 
     &.logo-home {
-      // FIXME background-images break build. Figure out why.
-      // use <img src='icon300'> until this can be fixed. - Paul
+      // TODO convert to base64
       // background-image: url('img/favicons/icon300.png');
-      // background-size: contain;
+      background-size: contain;
       border: 0;
       padding: 0;
       height: 64px;

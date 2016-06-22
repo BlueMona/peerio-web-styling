@@ -1,5 +1,5 @@
 a {
-  color: currentColor; // not sure how I feel about this. revisit later. - Paul
+  color: currentColor; // TODO not sure how I feel about this. revisit later. - Paul
   // bad for accessability, but fixes dots on firefox - Paul
   &:active,
   &:focus,
