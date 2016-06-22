@@ -58,12 +58,6 @@
   }
 }
 
-[data-page="home"] li.home,
-[data-page="security"] li.security,
-[data-page="referrals"] li.referrals,
-[data-page="renvoi"] li.referrals,
-[data-page="technology"] li.technology,
-[data-page="notre technologie"] li.technology,
 .nav-desktop li:hover {
   color: $white-100;
   border-bottom-color: $white-70;
@@ -96,13 +90,17 @@
     color: $white-70;
 
     &.logo-home {
-      background-image: url('img/favicons/icon300.png');
-      background-size: contain;
+      // FIXME background-images break build. Figure out why.
+      // use <img src='icon300'> until this can be fixed. - Paul
+      // background-image: url('img/favicons/icon300.png');
+      // background-size: contain;
       border: 0;
       padding: 0;
       height: 64px;
+      width: 64px;
       margin-right: $margin-default;
-      float: left;  // change to flexbox and remove this - paul
+      //FIXME change to flexbox and remove float - Paul
+      float: left;
 
       a {
         width: 64px;
