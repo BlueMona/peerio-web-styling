@@ -11,14 +11,14 @@
 }
 
 .padding-base {
-  margin: $padding-base;
+  padding: $padding-base;
 
   &.tb {
-    margin: $padding-base 0;
+    padding: $padding-base 0;
   }
 
   &.lr {
-    margin: 0 $padding-base;
+    padding: 0 $padding-base;
   }
 }
 
