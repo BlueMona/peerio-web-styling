@@ -114,14 +114,14 @@
   width: 100vw;
 
   .button-open {
-    @extend .flex-shrink-0;
+    @extend %flex-shrink-0;
 
     width: 64px;
     height: 64px;
   }
 
   .md-title {
-    @extend .text-overflow-ellipsis;
+    @extend %text-overflow-ellipsis;
 
     margin: 0 $margin-default;
   }
@@ -131,7 +131,7 @@
 .button-back {
   @extend %flex-row;
   @extend %flex-align-center;
-  @extend .flex-justify-center;
+  @extend %flex-justify-center;
 }
 
 .back {
@@ -170,7 +170,7 @@
   }
 
   .content-nav {
-    @extend .flex-grow-1;
+    @extend %flex-grow-1;
 
     overflow: hidden;
     overflow-y: auto;

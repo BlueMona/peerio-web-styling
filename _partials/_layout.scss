@@ -47,7 +47,7 @@
 }
 
 [data-page="registration"] .main {
-  @extend .flex-col;
+  @extend %flex-col;
 }
 
 

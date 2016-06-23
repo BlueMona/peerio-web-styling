@@ -19,7 +19,7 @@
   }
 
   .card-title {
-    @extend .md-title;
+    @extend %md-title;
 
     background: rgba($black, .06);
     color: $black-54;
