@@ -1,6 +1,6 @@
 @import 'normailize';
 
-@import 'vars/*';
+@import 'vars/*.scss';
 
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
@@ -28,4 +28,4 @@ body {
   padding: 0;
 }
 
-@import '_partials/*'
+@import '_partials/*.scss';
