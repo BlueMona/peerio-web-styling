@@ -23,11 +23,11 @@
 }
 
 .section-icon {
-  align-items: center;
-  display: flex;
+  @extend %flex-row;
+  @extend %flex-align-center;
+  @extend %flex-justify-center;
+
   flex: 1 0 33vw;
-  flex-direction: row;
-  justify-content: center;
   margin: #{$margin-base*4} 0;
 
   @media screen and (max-width: $mobile-large) {
@@ -77,8 +77,7 @@
     }
   }
 
-  // TODO fix this.
-  // the rule compiles but doesn't appear to be working.
+  // FIXME the rule compiles but doesn't appear to be working.
   @media screen and (min-width: #{$mobile-large+1}) {
     [data-page='press'] & {
       .content-wrapper {
@@ -217,8 +216,10 @@
     }
   }
 }
+
 .pricing-col {
   @extend %flex-col;
+
   width: 300px;
 
   @media screen and (max-width: $mobile-large) {
@@ -234,5 +235,3 @@
     }
   }
 }
-
-@import '_grid.scss';
