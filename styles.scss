@@ -1,6 +1,11 @@
 @import 'normailize';
 
-@import 'vars/*.scss';
+@import 'vars/colors';
+@import 'vars/fonts';
+@import 'vars/grid';
+@import 'vars/layout';
+@import 'vars/typography';
+@import 'vars/utils';
 
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
@@ -28,4 +33,18 @@ body {
   padding: 0;
 }
 
-@import '_partials/*.scss';
+@import '_partials/base-elements';
+@import '_partials/buttons';
+@import '_partials/card';
+@import '_partials/checkout';
+@import '_partials/dialog';
+@import '_partials/font-awesome';
+@import '_partials/footer';
+@import '_partials/forms';
+@import '_partials/grid';
+@import '_partials/helpers';
+@import '_partials/layout';
+@import '_partials/nav';
+@import '_partials/slides';
+@import '_partials/social';
+@import '_partials/typography';
