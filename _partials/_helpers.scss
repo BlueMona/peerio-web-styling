@@ -25,3 +25,8 @@
 .text-error {
   color: $color-error;
 }
+
+
+.disabled {
+  pointer-events: none; 
+}
