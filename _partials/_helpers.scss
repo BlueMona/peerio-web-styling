@@ -1,3 +1,6 @@
+/*--------------------------
+  Layout
+--------------------------*/
 .margin-base {
   margin: $margin-base;
 
@@ -21,12 +24,21 @@
     padding: 0 $padding-base;
   }
 }
-
-.text-error {
-  color: $color-error;
+/*--------------------------
+  State
+--------------------------*/
+.disabled {
+  pointer-events: none;
 }
 
+// TODO make this more robust - paul
+.hide {
+  display: none;
+}
 
-.disabled {
-  pointer-events: none; 
+/*--------------------------
+  text-error
+--------------------------*/
+.text-error {
+  color: $color-error;
 }
