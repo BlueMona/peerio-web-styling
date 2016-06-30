@@ -10,7 +10,7 @@
   @extend %flex-row;
 
   @media screen and (max-width: $mobile-small) {
-    @extend %flex-col;
+    flex-direction: column;
   }
 }
 
@@ -18,7 +18,7 @@
   @extend %flex-col;
 
   @media screen and (max-width: $mobile-small) {
-    @extend %flex-row;
+    flex-direction: row;
   }
 }
 
