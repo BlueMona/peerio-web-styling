@@ -1,6 +1,6 @@
 {
   "name": "peerio-web-styling",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Styling for Peerio websites and web apps",
   "main": "styles.scss",
   "private": true,

@@ -6,6 +6,22 @@
   @extend %flex-col;
 }
 
+.flex-responsive-row {
+  @extend %flex-row;
+
+  @media screen and (max-width: $mobile-small) {
+    @extend %flex-col;
+  }
+}
+
+.flex-responsive-col {
+  @extend %flex-col;
+
+  @media screen and (max-width: $mobile-small) {
+    @extend %flex-row;
+  }
+}
+
 .flex-grow-1 {
   @extend %flex-grow-1;
 }
