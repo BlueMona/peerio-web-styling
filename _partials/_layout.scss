@@ -5,6 +5,13 @@
   overflow: hidden;
   overflow-y: auto;
   margin-top: #{$margin-base*8};
+
+  + .main {
+    //  FIXME: this is a hack for use with reactjs web apps.
+    //  Remove once styles are reviewed and revised for enclosing tags required by react modules.
+
+    margin-top: 0;
+  }
 }
 
 .content-wrapper {
