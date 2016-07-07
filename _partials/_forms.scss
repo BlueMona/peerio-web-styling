@@ -1,12 +1,19 @@
-input,
+input:not(.button),
 select {
+  background: rgba(0, 0, 0, .06);
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: $border-radius-base;
+  font-size: 16px;
   height: 36px;
-  line-height: 36px;
-  background: $black-12;
-  border: 0;
+  line-height: 32px;
   margin-right: $margin-base;
   outline: 0;
-  padding: 0 $padding-base;
+  padding: 0 4px;
+  transition: $transition-normal;
+
+  &:focus {
+    border: 2px solid rgba(0, 0, 0, .08);
+  }
 }
 
 select {
@@ -26,6 +33,11 @@ select {
   color: $black-38;
 }
 
+// Checkbox Input template
+// label.checkbox-input for="input-id"
+//   input type="checkbox" name="name" value="value" id="input-id"
+//   i.material-icons
+//   span Label text
 
 .checkbox-input {
   [type="checkbox"] {
