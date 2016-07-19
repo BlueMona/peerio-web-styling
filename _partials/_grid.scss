@@ -46,6 +46,10 @@
   @extend %flex-align-start;
 }
 
+.flex-align-baseline {
+  @extend %flex-align-baseline;
+}
+
 .flex-justify-start {
   @extend %flex-justify-start;
 }
