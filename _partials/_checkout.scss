@@ -12,14 +12,11 @@
     margin: #{$margin-base*4} $margin-base 0 0;
   }
 
-
-
   .submit {
     & + .hidden-helper {
       color: transparent;
       overflow: hidden;
     }
-
 
     &:hover + .hidden-helper {
       color: $black-38;
@@ -45,7 +42,6 @@
     .flex-col {
       width: 100%;
     }
-
 
     .card-wrapper {
       display: none;
